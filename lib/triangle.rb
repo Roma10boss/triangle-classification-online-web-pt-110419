@@ -12,7 +12,7 @@ class Triangle
     array = array.sort
     
     if ((@side1 == 0) ||  (@side2 == 0) || (@side1 == 0))
-      raise TriangleError
+      raise TRangeError
       
     elsif (@side1 < 0 ||  @side2 < 0 || @side3 < 0)
       puts "negative side"
@@ -30,7 +30,7 @@ class Triangle
     elsif (!(side1 == side2) &&  !(side2 == side3) && !(side1 == side3)) 
       return :scalene
     else
-     raise RangeError
+     raise TriangleError
     end
   end
 end
