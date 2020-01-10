@@ -12,7 +12,7 @@ class Triangle
     array = array.sort
     
     if ((@side1 == 0) ||  (@side2 == 0) || (@side1 == 0))
-      raise TRangeError
+      raise RangeError
       
     elsif (@side1 < 0 ||  @side2 < 0 || @side3 < 0)
       puts "negative side"
