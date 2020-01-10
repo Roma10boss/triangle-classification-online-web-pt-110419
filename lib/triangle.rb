@@ -7,6 +7,9 @@ class Triangle
     @side3 = side3
   end
   
+  def valid? 
+    
+  
   def kind
     array = [@side1,@side2,@side3]
     array = array.sort
